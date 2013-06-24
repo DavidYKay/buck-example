@@ -1,4 +1,4 @@
-package com.example.activity;
+package com.example.model;
 
 import static org.junit.Assert.*;
 
@@ -27,6 +27,14 @@ public class MyFirstTest {
    public void testHelloWorld()
    {
       h.setName("World");
+      assertEquals(h.getName(),"World");
+      assertEquals(h.getMessage(),"Hello World!");
+   }
+
+   @Test
+   public void testFailure()
+   {
+      h.setName("Bah");
       assertEquals(h.getName(),"World");
       assertEquals(h.getMessage(),"Hello World!");
    }

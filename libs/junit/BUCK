@@ -1,0 +1,7 @@
+prebuilt_jar(
+  name = 'junit',
+  binary_jar = 'junit-4.11.jar',
+  source_jar = 'junit-4.11-sources.jar',
+  javadoc_url = 'http://kentbeck.github.com/junit/javadoc/4.8/',
+  visibility = [ 'PUBLIC' ],
+)

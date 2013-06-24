@@ -1,6 +1,11 @@
 java_test(
   name = 'model_tests',
   srcs = glob(['*.java']),
-  source_under_test = [':model'],
+  source_under_test = ['//java/com/example/model:model'],
   visibility = [ 'PUBLIC' ],
+  deps = [
+      '//java/com/example/model:model',
+      '//libs/junit:junit',
+      '//libs/hamcrest:hamcrest',
+      ],
 )
