@@ -1,0 +1,10 @@
+java_library(
+  name = 'model',
+  srcs = glob(['*.java']),
+  visibility = [ 'PUBLIC' ],
+)
+
+project_config(
+  src_target  = ':model',
+  test_target = ':model_tests',
+)

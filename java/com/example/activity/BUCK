@@ -6,4 +6,5 @@ android_library(
 
 project_config(
   src_target = ':activity',
+  # test_target = ':activity_tests',
 )
