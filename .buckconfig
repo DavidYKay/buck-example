@@ -1,2 +1,4 @@
 [alias]
     app = //apps/myapp:app
+[java]
+    src_roots = /java/
