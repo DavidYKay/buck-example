@@ -1,0 +1,14 @@
+android_binary(
+  name = 'app',
+  manifest = 'AndroidManifest.xml',
+  target = 'Google Inc.:Google APIs:16',
+  keystore_properties = 'debug.keystore.properties',
+  deps = [
+    '//java/com/example/activity:activity',
+    '//res/com/example/activity:res',
+  ],
+)
+
+project_config(
+  src_target = ':app',
+)
