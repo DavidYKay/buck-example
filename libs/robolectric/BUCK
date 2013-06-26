@@ -1,0 +1,6 @@
+prebuilt_jar(
+  name = 'robolectric',
+  binary_jar = 'robolectric-2.2-jar-with-dependencies.jar',
+  source_jar = 'robolectric-2.2-sources.jar',
+  visibility = [ 'PUBLIC' ],
+)
